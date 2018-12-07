@@ -1,0 +1,26 @@
+#JSGF V1.0 utf-8 cn;
+grammar ivm;
+public <main> = ("<s>"(
+    <volume_inc>
+    | <volume_dec>
+    | <device_close>
+    | <wakeup>
+) "</s>");
+
+<volume_inc> = ("<volume_inc_>"(
+    音量增大
+    | 增大音量
+)"</volume_inc_>");
+
+<volume_dec> = ("<volume_dec_>"(
+    减小音量
+    | 减小音量
+)"</volume_dec_>");
+
+<device_close> = ("<device_close_>"(
+    关闭空调
+)"</device_close_>");
+
+<wakeup> = ("<wakeup_>"(
+    空调空调
+)"</wakeup_>");

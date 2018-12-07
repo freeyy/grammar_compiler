@@ -1,0 +1,10 @@
+#JSGF V1.0 utf-8 cn;
+
+grammar wakeup;
+
+public <main> =("<s>"(
+    <wakeup>
+)"</s>");
+<wakeup> = ("<wakeup_>"(
+    空调空调
+)"</wakeup_>");
